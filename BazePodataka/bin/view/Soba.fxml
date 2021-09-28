@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="mainAnchor" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="1135.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SobaController">
+   <children>
+      <VBox alignment="CENTER" spacing="10.0">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <TextField fx:id="textField" prefHeight="33.0" prefWidth="149.0" promptText="tip sobe" translateX="-190.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="pretraziButton" mnemonicParsing="false" onAction="#pretraga" stylesheets="@../app/application.css" text="Pretrazi" translateX="-150.0" />
+               </children>
+            </HBox>
+            <TableView fx:id="tabelaSoba" maxWidth="-Infinity" prefHeight="300.0">
+              <columns>
+                <TableColumn fx:id="sobaCol" maxWidth="107.0" minWidth="60.0" prefWidth="107.0" text="SobaID" />
+                  <TableColumn fx:id="brojSobeCol" maxWidth="258.0" minWidth="106.0" prefWidth="169.0" text="BrojSobe" />
+                  <TableColumn fx:id="cijenaSobeCol" maxWidth="218.0" minWidth="77.0" prefWidth="119.0" text="Cijena" />
+                  <TableColumn fx:id="tipSobeCol" maxWidth="127.0" minWidth="-1.0" prefWidth="124.0" text="TipSobe" />
+                  <TableColumn fx:id="zauzetaCol" prefWidth="140.0" text="Zauzeta" />
+              </columns>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1135.0" spacing="10.0" stylesheets="@../app/application.css">
+               <children>
+                  <Button fx:id="dodajSobuID" mnemonicParsing="false" onAction="#dodajSobu" prefHeight="30.0" prefWidth="100.0" text="DodajSobu" />
+                  <Region prefWidth="50.0" />
+                  <Button fx:id="ukloniSobuID" mnemonicParsing="false" onAction="#ukloniSobu" prefHeight="30.0" prefWidth="100.0" text="UkloniSobu" />
+                  <Region prefWidth="50.0" />
+                  <Button fx:id="AzurirajSobu" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Azuriraj" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

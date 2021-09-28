@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DodavanjeOsobaController">
+   <children>
+      <HBox alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefWidth="300.0" spacing="20.0" style="-fx-background-color: #c1c4c9;" stylesheets="@../app/application.css" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="imeID" maxWidth="-Infinity" prefWidth="200.0" promptText="ime">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="prezimeID" maxWidth="-Infinity" prefWidth="200.0" promptText="prezime">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="jmbID" maxWidth="-Infinity" prefWidth="200.0" promptText="jmb">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+                  <ComboBox fx:id="polID" maxWidth="-Infinity" prefWidth="200.0" promptText="pol">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ComboBox>
+                  <TextField fx:id="brojID" maxWidth="-Infinity" prefWidth="200.0" promptText="postanski broj">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+                  <DatePicker fx:id="datumID" maxWidth="-Infinity" prefWidth="200.0" promptText="datum rodjenja">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </DatePicker>
+                  <Button fx:id="dodajID" alignment="CENTER" maxWidth="-Infinity" mnemonicParsing="false" onAction="#dodaj" prefHeight="30.0" prefWidth="200.0" text="Dodaj">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefWidth="300.0" spacing="20.0" style="-fx-background-color: #c1c4c9;" stylesheets="@../app/application.css" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="emailField" maxWidth="-Infinity" prefWidth="200.0" promptText="username">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="telField" maxWidth="-Infinity" prefWidth="200.0" promptText="telefon">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+                  <ComboBox fx:id="pozicijaField" maxWidth="-Infinity" prefWidth="200.0" promptText="pozicija">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ComboBox>
+                  <TextField fx:id="userField" maxWidth="-Infinity" prefWidth="200.0" promptText="username">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+                  <PasswordField fx:id="passField" maxWidth="-Infinity" prefWidth="200.0" promptText="password">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </PasswordField>
+                  <TextField fx:id="plataField" maxWidth="-Infinity" prefWidth="200.0" promptText="plata">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+                  <Button fx:id="odustaniID" alignment="CENTER" maxWidth="-Infinity" mnemonicParsing="false" onAction="#odustani" prefHeight="30.0" prefWidth="200.0" text="Odustani">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding></VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

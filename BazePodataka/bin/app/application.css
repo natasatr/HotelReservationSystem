@@ -1,0 +1,23 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+AnchorPane{
+	-fx-background-color: linear-gradient(from 50.0px 50.0px to 400.0px 200.0px, #1a1a1a, #c7c7c7);
+}
+
+
+.button{
+	-fx-background-color: linear-gradient(from 25.0px 25.0px to 100.0px 100.0px, #00285c, #679ee6);
+	/*-fx-background-color: #00285c;*/
+	-fx-text-fill: #ffffff;
+	-fx-background-radius: 15.0;
+	-fx-font-size: 15.0;
+	-fx-min-width:120.0;
+	-fx-min-height:40.0;
+}
+
+Button:hover{
+   -fx-background-color: #679ee6;
+   -fx-translate-y: -5.0;
+   -fx-scale-x: 1.1;
+   -fx-scale-y: 1.1;
+}
